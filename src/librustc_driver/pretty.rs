@@ -806,8 +806,7 @@ pub fn print_after_hir_lowering<'tcx>(
                                             src_name,
                                             &mut rdr,
                                             box out,
-                                            annotation.pp_ann(),
-                                            true)
+                                            annotation.pp_ann())
                 })
             }
 
@@ -830,8 +829,7 @@ pub fn print_after_hir_lowering<'tcx>(
                                                                          src_name,
                                                                          &mut rdr,
                                                                          box out,
-                                                                         annotation.pp_ann(),
-                                                                         true);
+                                                                         annotation.pp_ann());
                     for node_id in uii.all_matching_node_ids(hir_map) {
                         let node = hir_map.get(node_id);
                         pp_state.print_node(node)?;
