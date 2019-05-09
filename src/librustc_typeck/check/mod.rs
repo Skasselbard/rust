@@ -3084,7 +3084,7 @@ impl<'a, 'gcx, 'tcx> FnCtxt<'a, 'gcx, 'tcx> {
 
     // AST fragment checking
     fn check_lit(&self,
-                 lit: &ast::Lit,
+                 lit: &hir::Lit,
                  expected: Expectation<'tcx>)
                  -> Ty<'tcx>
     {
